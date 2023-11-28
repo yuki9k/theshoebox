@@ -1,0 +1,76 @@
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#search-bar {
+    display: flex;
+}
+
+#page-title {}
+
+#header-icons {
+    display: flex;
+}
+
+/* FILTER BAR */
+
+#filter-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* LEFT SIDE OF FILTER BAR */
+
+#filter-left {
+    display: flex;
+    gap: 10px;
+}
+
+#filter-button {}
+
+#filter-popup {
+    display: none;
+}
+
+#active-filters {}
+
+/* RIGHT SIDE OF FILTER BAR */
+
+#filter-right {}
+
+#view-buttons {
+    display: flex;
+}
+
+/* MAIN/PRODUCT LIST */
+
+#product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* LEFT SIDE OF FOOTER */
+
+#footer-left {}
+
+#about-us-button {}
+
+#about-us-popup {
+    display: none;
+}
+
+/* RIGHT SIDE OF FILTER BAR */
+
+#footer-right {}
+
+#email-container {}
