@@ -1,0 +1,51 @@
+ /* HEAD */
+
+header {
+    display: flex;
+}
+
+#search-icon {
+
+}
+#search-box {
+}
+
+#theshoe-box {
+}
+
+#account-icon {
+}
+
+#heart-icon {
+}
+
+#shopping-icon {
+}
+
+/* FILTER */
+
+#filter-bar {
+    display: flex;
+}   
+#filter-button {
+}
+#filter-text {
+}
+#view-icon {
+}
+#viewthree-colums {
+}
+#viewfour-colums {
+}  
+  
+/* MAIN */  
+#product-list {
+} 
+
+/* FOOT */
+footer {
+}
+#info-text {
+}
+#about-buttom {
+}
