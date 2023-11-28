@@ -1,0 +1,88 @@
+/* HEADER */
+
+header {
+    display: flex;
+}
+
+#free_shipping {
+    background-color: black;
+    color: white;
+    margin: 5px auto;
+}
+
+#search_bar,
+#title,
+#icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* FILTER BAR */
+
+#filters_bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#filters_left {
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+}
+
+#filters_button {
+    background-image: url();
+}
+
+#filters_popup {}
+
+
+#filters_right {
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+}
+
+#view {
+    font-size: 1vw;
+    color: #FF9A02;
+}
+
+#view_icons {
+    background-image: url();
+}
+
+/* MAIN */
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+#footer_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#information {}
+
+#about_us_button {
+    background-color: #FF9A02;
+    color: white;
+}
+
+#footer_right {
+    display: flex;
+    justify-content: left;
+}
+
+#email_information {}
