@@ -1,0 +1,74 @@
+/* header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#search_bar {
+    display: flex;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+#icons {
+    display: flex;
+}
+
+/* Nav */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#filter {
+    display: flex;
+    gap: 5px;
+}
+
+#text {
+    display: flex;
+}
+
+#view {
+    display: flex;
+}
+
+/* main */
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footerLeft {
+    display: flex;
+}
+
+#footerRight {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
