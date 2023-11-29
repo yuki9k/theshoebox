@@ -1,9 +1,9 @@
 "use strict";
-function render_structure(container) {
-    container.innerHTML = `
+function render_structure() {
+    document.querySelector("#wrapper").innerHTML = `
     <header>
         <div id="search-bar"></div>
-        <h1 id="page-title"></h1>
+        <h1 id="page-title">THE.SHOE.BOX</h1>
         <div id="header-icons"></div>
     </header>
     <div id="filter-bar">
