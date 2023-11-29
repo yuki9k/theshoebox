@@ -1,6 +1,7 @@
 "use strict";
 function render_structure() {
     document.querySelector("#wrapper").innerHTML = `
+    <div id="free-shipping">Free shipping on all orders in EU</div>
     <header>
         <div id="search-bar"></div>
         <h1 id="page-title">THE.SHOE.BOX</h1>
@@ -30,6 +31,7 @@ function render_structure() {
     </footer>`;
 
     return {
+        freeShipping: container.querySelector("#free-shipping"),
         header: container.querySelector("header"),
         searchBar: container.querySelector("#search-bar"),
         pageTitle: container.querySelector("#page-title"),

@@ -1,4 +1,8 @@
-/* HEADER */
+/* FREE SHIPPING NOTIFICATION */
+
+#free-shipping {
+    text-align: center;
+}
 
 header {
     display: flex;
