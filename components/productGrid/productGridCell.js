@@ -9,7 +9,7 @@ function renderProductCell(parent, array) {
             <img src="../../media/flags/${shoe.country_id}.png">
         </div>
         <div class="shoe-pic">
-            <img src="../../media/skobilder/${shoe.file_name}.jpg">
+            <img src="../../media/skobilder/${shoe.file_name}">
         </div>
         <div class="shoe-information">
             <h3 class="type">SNEAKERS</h3>
