@@ -1,6 +1,7 @@
 "use strict";
 function render_structure() {
-    document.querySelector("#wrapper").innerHTML = `
+    const container = document.querySelector("#wrapper");
+    container.innerHTML = `
     <div id="free-shipping">Free shipping on all orders in EU</div>
     <header>
         <div id="search-bar"></div>
