@@ -1,0 +1,68 @@
+@font-face {
+    font-family: "InterRegular";
+    src: url(../../fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: "InterBold";
+    src: url(../../fonts/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: "InterMedium";
+    src: url(../../fonts/Inter-Medium.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.product-cell {
+    border: 2px solid black;
+    width: 500px;
+    position: relative;
+}
+
+.flag {
+    display: flex;
+    justify-content: flex-end;
+    height: 25px;
+    position: absolute;
+    top: 13px;
+    left: 0;
+    right: 14px;
+}
+
+
+.flag > img {
+    height: 100%;
+}
+
+.shoe-pic > img {
+    width: 100%;
+}
+
+.shoe-information {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.type {
+    font-family: "InterRegular";
+    font-size: 1.5rem;
+}
+
+.name {
+    font-family: "InterBold";
+}
+
+.price {
+    font-family: "InterMedium";
+    font-size: 1.7rem;
+}
+
