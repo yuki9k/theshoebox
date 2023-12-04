@@ -19,7 +19,7 @@ function render_structure() {
             <div id="view-buttons"></div>
         </div>
     </div>
-    <main id="product-list"></main>
+    <main id="product-grid"></main>
     <footer>
         <div id="footer-left">
             <div id="about-us-button">
@@ -44,7 +44,7 @@ function render_structure() {
         activeFilters: container.querySelector("#active-filters"),
         filterRight: container.querySelector("#filter-right"),
         viewButtons: container.querySelector("#view-buttons"),
-        productList: container.querySelector("#product-list"),
+        productGrid: container.querySelector("#product-grid"),
         footer: container.querySelector("footer"),
         footerLeft: container.querySelector("#footer-left"),
         aboutUsButton: container.querySelector("#about-us-button"),
