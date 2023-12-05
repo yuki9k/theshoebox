@@ -13,11 +13,6 @@
     src: url(../../fonts/Inter-Medium.ttf);
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 .product-cell {
     border: 1px solid black;
     width: 100%;
