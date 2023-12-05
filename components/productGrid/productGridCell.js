@@ -5,16 +5,12 @@ function renderProductCell(parent, array) {
         switch (kindID) {
             case 1:
                 return "Slippers";
-                break;
             case 2:
                 return "Boots";
-                break;
             case 3:
                 return "Sneakers";
-                break;
             default:
                 return "Shoes";
-                break;
         }
     }
 
