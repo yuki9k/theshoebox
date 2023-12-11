@@ -66,6 +66,7 @@
 .info {
   font-family: "InterBold";
   font-size: 2rem;
+  text-transform: uppercase;
 }
 
 .price {
