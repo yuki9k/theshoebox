@@ -1,15 +1,10 @@
 "use strict";
 
-function openModal(modal) {
-  if (modal == null) return
-  modal.classList.add('active')
-  overlay.classList.add('active')
-}
-
 function closeModal(modal) {
   if (modal == null) return
   modal.classList.remove('active')
   overlay.classList.remove('active')
+  document.querySelector("#pop-up-shoe").remove();
 }
 
 function renderProductpopUp(event) {
@@ -17,8 +12,7 @@ function renderProductpopUp(event) {
   let productPopUp = document.createElement("div");
   productPopUp.setAttribute("id", "pop-up-shoe");
   productPopUp.innerHTML = `
-  <button class="open-modal"  data-modal-target="#modal">More  information</button>
-  <div class="modal" id="modal">
+  <div class="modal active" id="modal">
     <div class="modal-header">
     </div>
     <div class="modal-left">
@@ -40,21 +34,13 @@ function renderProductpopUp(event) {
         <div id="grade"></div>
     </div>
   </div>
-  <div id="overlay"></div>`
+  <div class="active" id="overlay"></div>`
 
-  productPopUp.style.backgroundImage = `url(media/skobilder/${shoe.file_name})`
   document.body.appendChild(productPopUp);
+  document.querySelector(".modal-left").style.backgroundImage = `url(media/skobilder/${shoe.file_name})`
 
-  const openModalButtons = document.querySelectorAll('[data-modal-target]')
   const closeModalButtons = document.querySelectorAll('[data-close-button]')
   const overlay = document.getElementById('overlay')
-
-  openModalButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      const modal = document.querySelector(button.dataset.modalTarget)
-      openModal(modal)
-    })
-  })
 
   overlay.addEventListener('click', () => {
     const modals = document.querySelectorAll('.modal.active')
