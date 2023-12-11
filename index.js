@@ -1,4 +1,4 @@
 "use strict";
 
-const structureContainers = render_structure();
+const structureContainers = renderStructure();
 renderProductCell(structureContainers.productGrid, SHOES);
