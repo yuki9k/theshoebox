@@ -7,6 +7,9 @@ function closeModal(modal) {
   document.querySelector("#pop-up-shoe").remove();
 }
 
+
+
+
 function renderProductpopUp(event) {
   const shoe = getProductInfo(event.currentTarget);
   let productPopUp = document.createElement("div");
