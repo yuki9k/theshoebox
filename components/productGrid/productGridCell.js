@@ -20,10 +20,10 @@ function renderProductCell(parent, array) {
         productCell.setAttribute("data-id", shoe.id);
         productCell.innerHTML = `
         <div class="flag">
-            <img src="../../media/flags/${shoe.country_id}.png">
+            <img src="media/flags/${shoe.country_id}.png">
         </div>
         <div class="shoe-pic">
-            <img src="../../media/skobilder/${shoe.file_name}">
+            <img src="media/skobilder/${shoe.file_name}">
         </div>
         <div class="shoe-information">
             <h3 class="shoe-type">${returnTypeOfShoe(shoe.kind_id)}</h3>
