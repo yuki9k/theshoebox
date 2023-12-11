@@ -36,3 +36,46 @@ function closeModal(modal) {
   modal.classList.remove('active')
   overlay.classList.remove('active')
 }
+<<<<<<< Updated upstream
+=======
+
+
+
+
+
+function renderProductpopUp (event) {
+  const shoe = getProductInfo(event.currentTarget);
+  let productPopUp = document.createElement("div");
+  productPopUp.setAttribute("id", "pop-up-shoe");
+  productPopUp.innerHTML = `
+  <button class="open-modal"  data-modal-target="#modal">More  information</button>
+  <div class="modal" id="modal">
+    <div class="modal-header">
+    </div>
+    <div class="modal-left">
+        <div class="shoe"></div>
+    </div>
+    <div class="modal-right">
+        <h2 class="info">${shoe.name}NIKE DUNK LOW 1 PANDA</h2>
+        <p class="price">${shoe.price}1050 Kr</p>
+        <img src="../../../media/icons/star-full-icon-orange.png" alt="">
+        <div class="size">
+          <p>36</p>
+        </div>
+        <div class="bag">ADD TO BAG</div>
+        <div class="border"></div>
+        <p>DETAILS</p>
+    </div>
+    <button data-close-button class="close-button">&times;</button>
+    <div class="modal-bottom">
+        <div id="grade"></div>
+    </div>
+  </div>
+  <div id="overlay"></div>`
+
+  productPopUp.style.backgroundImage = `url(media/skobilder/${shoe.file.name})`
+
+  document.body.appendChild(productPopUp);
+}
+
+>>>>>>> Stashed changes
