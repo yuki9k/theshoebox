@@ -24,13 +24,15 @@ function renderProductpopUp(event) {
     <div class="modal-right">
         <h2 class="info">${shoe.name}</h2>
         <p class="price">${shoe.price}</p>
-        <img class="star" src="../../../media/icons/star-full-icon-orange.png" alt="">
+        <div class="star">
+          <img src="media/icons/star-full-icon-orange.png" alt="">
+        </div>
         <div class="size-container">
           <p class="size">36</p>
         </div>
         <div class="bag">ADD TO BAG</div>
         <div class="border"></div>
-        <p>DETAILS</p>
+        <p class="details">DETAILS</p>
     </div>
     <button data-close-button class="close-button">&times;</button>
     <div class="modal-bottom">
