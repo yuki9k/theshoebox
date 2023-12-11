@@ -10,7 +10,7 @@ function closeModal(modal) {
 
 
 
-function renderProductpopUp(event) {
+function renderProductPopUp(event) {
   const shoe = getProductInfo(event.currentTarget);
   let productPopUp = document.createElement("div");
   productPopUp.setAttribute("id", "pop-up-shoe");
