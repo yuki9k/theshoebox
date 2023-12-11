@@ -140,12 +140,6 @@ div .modal-right {
   font-size: 1.2rem;
 }
 
-.details {
-  font-family: "InterMedium";
-  font-size: 1rem;
-  margin-left: 10px;
-}
-
 .info {
   margin: 20px 0 0 10px;
 }
@@ -166,4 +160,22 @@ div .modal-right {
   align-self: center;
   font-size: 1.2rem;
   font-family: "InterRegular";
+}
+
+.details-box {
+  display: flex;
+  height: 50px;
+  margin-left: 10px;
+  gap: 10px;
+}
+
+.details-box > p {
+  font-family: "InterMedium";
+  font-size: 1rem;
+}
+
+.details-box > img {
+  height: 16px;
+  width: 10px;
+  margin-top: 4px;
 }

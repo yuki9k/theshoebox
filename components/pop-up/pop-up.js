@@ -33,7 +33,10 @@ function renderProductPopUp(event) {
         </div>
         <div class="bag">ADD TO BAG</div>
         <div class="border"></div>
-        <p class="details">DETAILS</p>
+        <div class="details-box">
+          <p>DETAILS</p>
+          <img src="media/icons/thin-arrow-bottom-icon.png" alt="">
+        </div>
     </div>
     <button data-close-button class="close-button">&times;</button>
     <div class="modal-bottom">
