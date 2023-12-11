@@ -66,6 +66,7 @@
 .info {
   font-family: "InterBold";
   font-size: 2rem;
+  text-transform: uppercase;
 }
 
 .price {
@@ -84,6 +85,9 @@
 }
 
 .close-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
   background-color: white;
   font-size: 35px;
   cursor: pointer;

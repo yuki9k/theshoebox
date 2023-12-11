@@ -1,4 +1,5 @@
 "use strict";
+
 function renderStructure() {
     const container = document.querySelector("#wrapper");
     container.innerHTML = `
