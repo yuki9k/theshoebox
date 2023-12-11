@@ -26,9 +26,9 @@ function renderProductCell(parent, array) {
             <img src="../../media/skobilder/${shoe.file_name}">
         </div>
         <div class="shoe-information">
-            <h3 class="type">${returnTypeOfShoe(shoe.kind_id)}</h3>
-            <h1 class="name">${shoe.name}</h1>
-            <h2 class="price">${shoe.price}</h2>
+            <h3 class="shoe-type">${returnTypeOfShoe(shoe.kind_id)}</h3>
+            <h1 class="shoe-name">${shoe.name}</h1>
+            <h2 class="shoe-price">${shoe.price}</h2>
         </div>
         `;
         productCell.addEventListener("click", getProductInfo);

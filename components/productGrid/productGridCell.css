@@ -14,9 +14,16 @@
 }
 
 .product-cell {
-    border: 1px solid black;
+    border: 2px solid black;
     width: 100%;
     position: relative;
+    transition: all .1s ease-in-out;
+}
+
+.product-cell:hover {
+    border: 2px solid orange;
+    transform: scale(101%);
+    cursor: pointer;
 }
 
 .flag {
@@ -47,16 +54,16 @@
     margin-bottom: 10px;
 }
 
-.type {
+.shoe-type {
     font-family: "InterRegular";
     font-size: 1.5rem;
 }
 
-.name {
+.shoe-name {
     font-family: "InterBold";
 }
 
-.price {
+.shoe-price {
     font-family: "InterMedium";
     font-size: 1.7rem;
 }
