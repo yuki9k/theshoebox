@@ -31,7 +31,7 @@ function renderProductCell(parent, array) {
             <h2 class="shoe-price">${shoe.price}</h2>
         </div>
         `;
-        productCell.addEventListener("click", getProductInfo);
+        productCell.addEventListener("click", renderProductpopUp);
         parent.appendChild(productCell);
     }
 }
