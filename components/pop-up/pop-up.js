@@ -1,30 +1,5 @@
 "use strict";
 
-const openModalButtons = document.querySelectorAll('[data-modal-target]')
-const closeModalButtons = document.querySelectorAll('[data-close-button]')
-const overlay = document.getElementById('overlay')
-
-openModalButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const modal = document.querySelector(button.dataset.modalTarget)
-    openModal(modal)
-  })
-})
-
-overlay.addEventListener('click', () => {
-  const modals = document.querySelectorAll('.modal.active')
-  modals.forEach(modal => {
-    closeModal(modal)
-  })
-})
-
-closeModalButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const modal = button.closest('.modal')
-    closeModal(modal)
-  })
-})
-
 function openModal(modal) {
   if (modal == null) return
   modal.classList.add('active')
@@ -37,12 +12,7 @@ function closeModal(modal) {
   overlay.classList.remove('active')
 }
 
-
-
-
-
-
-function renderProductpopUp (event) {
+function renderProductpopUp(event) {
   const shoe = getProductInfo(event.currentTarget);
   let productPopUp = document.createElement("div");
   productPopUp.setAttribute("id", "pop-up-shoe");
@@ -55,8 +25,8 @@ function renderProductpopUp (event) {
         <div class="shoe"></div>
     </div>
     <div class="modal-right">
-        <h2 class="info">${shoe.name}NIKE DUNK LOW 1 PANDA</h2>
-        <p class="price">${shoe.price}1050 Kr</p>
+        <h2 class="info">${shoe.name}</h2>
+        <p class="price">${shoe.price}</p>
         <img class="star" src="../../../media/icons/star-full-icon-orange.png" alt="">
         <div class="size-container">
           <p class="size">36</p>
@@ -72,7 +42,31 @@ function renderProductpopUp (event) {
   </div>
   <div id="overlay"></div>`
 
-  productPopUp.style.backgroundImage = `url(media/skobilder/${shoe.file.name})`
-
+  productPopUp.style.backgroundImage = `url(media/skobilder/${shoe.file_name})`
   document.body.appendChild(productPopUp);
+
+  const openModalButtons = document.querySelectorAll('[data-modal-target]')
+  const closeModalButtons = document.querySelectorAll('[data-close-button]')
+  const overlay = document.getElementById('overlay')
+
+  openModalButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const modal = document.querySelector(button.dataset.modalTarget)
+      openModal(modal)
+    })
+  })
+
+  overlay.addEventListener('click', () => {
+    const modals = document.querySelectorAll('.modal.active')
+    modals.forEach(modal => {
+      closeModal(modal)
+    })
+  })
+
+  closeModalButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const modal = button.closest('.modal')
+      closeModal(modal)
+    })
+  })
 }
