@@ -1,4 +1,3 @@
-
 .product-cell {
     border: 2px solid black;
     width: 100%;
@@ -42,10 +41,12 @@
 .shoe-type {
     font-family: "InterRegular";
     font-size: 1.5rem;
+    text-transform: uppercase;
 }
 
 .shoe-name {
     font-family: "InterBold";
+    text-transform: uppercase;
 }
 
 .shoe-price {
