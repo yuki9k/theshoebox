@@ -72,6 +72,7 @@
   font-family: "InterMedium";
   font-size: 1.2rem;
   margin-left: 10px;
+  margin-top: 5px;
 }
 
 .modal-bottom {
@@ -84,7 +85,7 @@
 
 .close-button {
   background-color: white;
-  font-size: 30px;
+  font-size: 35px;
   cursor: pointer;
   display: grid;
   z-index: 1;
@@ -94,14 +95,17 @@
   grid-column: 7;
   grid-row: 1;
   height: 10px;
+  margin-right: 10px;
 }
 
 .size {
   height: 40px;
   width: 150px;
   border: 1px solid black;
-  margin: 10px;
+  margin-left: 10px;
   background-color: rgb(202, 202, 202);
+  display: flex;
+  align-items: center;
 }
 
 .bag {
@@ -137,10 +141,12 @@ div .modal-right {
   font-size: 1.2rem;
 }
 
+
 .details {
   font-family: "InterMedium";
   font-size: 1rem;
   margin-left: 10px;
+  margin-top: 10px;
 }
 
 .info {
@@ -148,8 +154,7 @@ div .modal-right {
 }
 
 .star {
-  margin-left: 10px;
-  margin-top: 5px;
+  margin: 10px 0 10px 10px;
   display: flex;
   gap: 10px;
 }
@@ -164,3 +169,4 @@ div .modal-right {
   font-size: 1.2rem;
   font-family: "InterRegular";
 }
+
