@@ -26,6 +26,7 @@ function renderProductPopUp(event) {
         <p class="price">${shoe.price}</p>
         <div class="star">
           <img src="media/icons/star-full-icon-orange.png" alt="">
+          <p>(${getNumberOfReviews(event.currentTarget.dataset.id)})</p>
         </div>
         <div class="size-container">
           <p class="size">36</p>
