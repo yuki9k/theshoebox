@@ -15,7 +15,7 @@ function renderProductPopUp(event) {
   let productPopUp = document.createElement("div");
   productPopUp.setAttribute("id", "pop-up-shoe");
   productPopUp.innerHTML = `
-  <div class="modal active" id="modal">
+  <div class="modal" id="modal">
     <div class="modal-header">
     </div>
     <div class="modal-left">
@@ -40,13 +40,14 @@ function renderProductPopUp(event) {
         <div id="grade"></div>
     </div>
   </div>
-  <div class="active" id="overlay"></div>`
+  <div id="overlay"></div>`
 
   document.body.appendChild(productPopUp);
   document.querySelector(".modal-left").style.backgroundImage = `url(media/skobilder/${shoe.file_name})`
 
   const closeModalButtons = document.querySelectorAll('[data-close-button]')
   const overlay = document.getElementById('overlay')
+  const modal = document.getElementById('modal')
 
   overlay.addEventListener('click', () => {
     const modals = document.querySelectorAll('.modal.active')
@@ -61,4 +62,11 @@ function renderProductPopUp(event) {
       closeModal(modal)
     })
   })
+
+  function addActiveClasses() {
+    modal.classList.add("active");
+    overlay.classList.add("active");
+  }
+
+  setTimeout(addActiveClasses, 1);
 }
