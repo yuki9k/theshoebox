@@ -17,6 +17,7 @@ function renderProductCell(parent, array) {
     for (let shoe of array) {
         const productCell = document.createElement("div");
         productCell.classList.add("product-cell");
+        productCell.setAttribute("data-id", shoe.id);
         productCell.innerHTML = `
         <div class="flag">
             <img src="../../media/flags/${shoe.country_id}.png">
@@ -30,6 +31,7 @@ function renderProductCell(parent, array) {
             <h2 class="price">${shoe.price}</h2>
         </div>
         `;
+        productCell.addEventListener("click", getProductInfo);
         parent.appendChild(productCell);
     }
 }
