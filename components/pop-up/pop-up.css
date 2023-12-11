@@ -115,16 +115,17 @@ div .modal-right {
   width: 250px;
 }
 
-p {
+.size-container,
+.size {
   font-size: 20px;
   margin: 10px;
 }
 
-h2 {
+.info {
   margin: 20px 0 0 10px;
 }
 
-img {
+.star {
   height: 30px;
   width: 30px;
   margin-left: 10px;
