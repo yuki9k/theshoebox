@@ -29,7 +29,7 @@ function renderProductPopUp(event) {
           <p>(${getNumberOfReviews(event.currentTarget.dataset.id)})</p>
         </div>
         <div class="size-container">
-          <p class="size">36</p>
+          <p class="size">41</p>
         </div>
         <div class="bag">ADD TO BAG</div>
         <div class="border"></div>
