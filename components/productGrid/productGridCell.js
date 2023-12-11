@@ -28,7 +28,7 @@ function renderProductCell(parent, array) {
         <div class="shoe-information">
             <h3 class="shoe-type">${returnTypeOfShoe(shoe.kind_id)}</h3>
             <h1 class="shoe-name">${shoe.name}</h1>
-            <h2 class="shoe-price">${shoe.price}</h2>
+            <h2 class="shoe-price">${shoe.price} kr</h2>
         </div>
         `;
         productCell.addEventListener("click", renderProductPopUp);

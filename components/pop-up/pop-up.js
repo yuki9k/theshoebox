@@ -20,7 +20,7 @@ function renderProductPopUp(event) {
     </div>
     <div class="modal-right">
         <h2 class="info">${shoe.name}</h2>
-        <p class="price">${shoe.price}</p>
+        <p class="price">${shoe.price} kr</p>
         <img class="star" src="../../../media/icons/star-full-icon-orange.png" alt="">
         <div class="size-container">
           <p class="size">36</p>
