@@ -71,7 +71,8 @@
 .price {
   font-family: "InterMedium";
   font-size: 1.2rem;
-  margin-left: 10px;
+  margin: 5px 0 5px 10px;
+  
 }
 
 .modal-bottom {
@@ -84,8 +85,8 @@
 
 .close-button {
   position: absolute;
-  top: 5px;
-  right: 10px;
+  top: -5px;
+  right: 5px;
   background-color: white;
   font-size: 30px;
   cursor: pointer;
@@ -105,6 +106,8 @@
   border: 1px solid black;
   margin: 10px;
   background-color: rgb(202, 202, 202);
+  display: flex;
+  align-items: center;
 }
 
 .bag {
@@ -167,6 +170,7 @@ div .modal-right {
   height: 50px;
   margin-left: 10px;
   gap: 10px;
+  margin-top: 10px;
 }
 
 .details-box > p {
