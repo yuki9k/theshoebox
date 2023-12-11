@@ -23,7 +23,7 @@ function renderProductPopUp(event) {
     </div>
     <div class="modal-right">
         <h2 class="info">${shoe.name}</h2>
-        <p class="price">${shoe.price}</p>
+        <p class="price">${shoe.price} kr</p>
         <div class="star">
           <img src="media/icons/star-full-icon-orange.png" alt="">
           <p>(${getNumberOfReviews(event.currentTarget.dataset.id)})</p>
