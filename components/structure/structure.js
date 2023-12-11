@@ -1,11 +1,11 @@
 "use strict";
-function render_structure() {
+function renderStructure() {
     const container = document.querySelector("#wrapper");
     container.innerHTML = `
-    <div id="free-shipping">Free shipping on all orders in EU</div>
+    <div id="free-shipping"></div>
     <header>
         <div id="search-bar"></div>
-        <h1 id="page-title">THE.SHOE.BOX</h1>
+        <h1 id="page-title"></h1>
         <div id="header-icons"></div>
     </header>
     <div id="filter-bar">
