@@ -36,8 +36,7 @@ function closeModal(modal) {
   modal.classList.remove('active')
   overlay.classList.remove('active')
 }
-<<<<<<< Updated upstream
-=======
+
 
 
 
@@ -58,9 +57,9 @@ function renderProductpopUp (event) {
     <div class="modal-right">
         <h2 class="info">${shoe.name}NIKE DUNK LOW 1 PANDA</h2>
         <p class="price">${shoe.price}1050 Kr</p>
-        <img src="../../../media/icons/star-full-icon-orange.png" alt="">
-        <div class="size">
-          <p>36</p>
+        <img class="star" src="../../../media/icons/star-full-icon-orange.png" alt="">
+        <div class="size-container">
+          <p class="size">36</p>
         </div>
         <div class="bag">ADD TO BAG</div>
         <div class="border"></div>
@@ -77,5 +76,3 @@ function renderProductpopUp (event) {
 
   document.body.appendChild(productPopUp);
 }
-
->>>>>>> Stashed changes
