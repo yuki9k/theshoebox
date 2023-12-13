@@ -30,6 +30,7 @@ function filter() {
 
 function get_checked_ids(arr) {
     FILTER_MAP = Object.fromEntries(arr.map(x => [x.name, x.id]));
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]')
     new_arr = []
     for (let i = 0; i < checkboxes.length; i++) {
 
