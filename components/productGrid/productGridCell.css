@@ -11,6 +11,10 @@
     cursor: pointer;
 }
 
+.product-cell:hover>.shoe-pic>img {
+    border-color: orange;
+}
+
 .flag {
     display: flex;
     justify-content: flex-end;
@@ -27,6 +31,7 @@
 
 .shoe-pic>img {
     width: 100%;
+    border-bottom: 2px solid black;
 }
 
 .shoe-information {
