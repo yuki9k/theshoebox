@@ -1,6 +1,8 @@
 "use strict";
 
 function renderProductCell(parent, array) {
+    parent.innerHTML = "";
+
     function returnTypeOfShoe(kindID) {
         switch (kindID) {
             case 1:
