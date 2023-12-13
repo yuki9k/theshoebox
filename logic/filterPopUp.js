@@ -34,22 +34,24 @@ function reset() {
 // Handle reset
 const resetbtn = document.getElementById("filterReset")
 resetbtn.addEventListener('click', reset)
+resetbtn.addEventListener('click', () => renderProductCell(structureContainers.productGrid, filter()))
 window.addEventListener('beforeunload', reset)
+window.addEventListener('beforeunload', () => renderProductCell(structureContainers.productGrid, filter()))
 
 
 
 
 COUNTRIES.forEach(
-    country => document.querySelector("#" + country.name).addEventListener('click', filter)
+    country => document.querySelector("#" + country.name).addEventListener('click', () => renderProductCell(structureContainers.productGrid, filter()))
 )
 
 
 KINDS.forEach(
-    kind => document.querySelector("#" + kind.name).addEventListener('click', filter)
+    kind => document.querySelector("#" + kind.name).addEventListener('click', () => renderProductCell(structureContainers.productGrid, filter()))
 )
 
 
-maxPriceSlider.addEventListener('mouseup', filter)
+maxPriceSlider.addEventListener('mouseup', () => renderProductCell(structureContainers.productGrid, filter()))
 
 
 
@@ -80,7 +82,7 @@ function filter() {
 
 
     }
-    console.log(new_arr)
+
     return new_arr;
 }
 

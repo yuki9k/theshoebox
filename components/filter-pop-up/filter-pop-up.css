@@ -9,6 +9,7 @@
 #filterReset {
     display: inline;
     padding-left: 2px;
+    font-family: "InterMedium";
 }
 
 
@@ -19,6 +20,14 @@
 
 #filterCountry {
     padding-left: 20px;
+}
+
+#filterCountry>h2 {
+    font-family: "InterBold";
+}
+
+#filterCountry>div {
+    font-family: "InterRegular";
 }
 
 
@@ -43,15 +52,32 @@
     padding-left: 20px;
 }
 
+#filterPrice>h2 {
+    font-family: "InterBold";
+
+}
+
 
 #filterPrice>input {
     width: 120px;
     display: flex;
 }
 
+#filterPrice>output {
+    font-family: "InterRegular";
+}
+
 
 #filterType {
     padding-left: 20px;
+}
+
+#filterType>h2 {
+    font-family: "InterBold";
+}
+
+#filterType>div {
+    font-family: "InterRegular";
 }
 
 

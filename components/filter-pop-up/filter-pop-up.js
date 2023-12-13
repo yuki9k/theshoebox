@@ -41,11 +41,11 @@ function render_filter_pop_up(parent) {
     </div>
     <div id="filterPrice">
         <h2>MAX PRICE</h2>
-        <input id="maxPrice" type="range" min="0" max="1000" step="10" value="500">
-        <output for="maxPrice" id="priceOutput">500</output>
+        <input id="maxPrice" type="range" min="209" max="1000" step="10" value="1000">
+        <output for="maxPrice" id="priceOutput">1000</output>
     </div>
     <div id="filterType">
-        <h2>TYPES</h2>
+        <h2>TYPE OF SHOE</h2>
         <div>
             <input id="Sneakers" type="checkbox">
             <label for="Sneakers">SNEAKERS</label>
@@ -60,5 +60,7 @@ function render_filter_pop_up(parent) {
         </div>
     </div>
     `
+
+
     parent.appendChild(filterMain)
 }
