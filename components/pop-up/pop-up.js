@@ -13,6 +13,7 @@ function renderProductPopUp(event) {
   const shoe = getProductInfo(event.currentTarget);
   const shoeReviews = getProductReviews(shoeId);
   const averageScoreArray = calculateAverageScoreByShoeId(shoeReviews);
+  const shoeAverageScore = String(averageScoreArray[shoeId]);
   let productPopUp = document.createElement("div");
   productPopUp.setAttribute("id", "pop-up-shoe");
   productPopUp.innerHTML = `
@@ -26,7 +27,7 @@ function renderProductPopUp(event) {
         <h2 class="info">${shoe.name}</h2>
         <p class="price">${shoe.price} kr</p>
         <div class="star">
-          <p>${averageScoreArray[shoeId]}</p>
+          <p>${shoeAverageScore.substring(0, 3)}</p>
           <img src="media/icons/star-full-icon-orange.png" alt="">
           <p>(${getNumberOfReviews(event.currentTarget.dataset.id)})</p>
         </div>
