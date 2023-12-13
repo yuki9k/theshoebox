@@ -3,6 +3,7 @@ body {
 }
 
 #search-bar {
+    font-family:  "InterRegular";
     position: relative;
     color: black;
     text-align: center;
@@ -12,6 +13,7 @@ body {
 }
 
 #free-shipping {
+   font-family:  "InterRegular";
     background-color: black;
     color: white;
     padding: 10px;
@@ -38,6 +40,7 @@ header {
 }
 
 #page-title {
+    font-family: "InterBold";
     flex-grow: 1; 
     text-align: center; 
     margin-right: 108px;
