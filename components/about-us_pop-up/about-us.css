@@ -1,0 +1,107 @@
+*{
+  box-sizing: border-box;
+}
+
+@font-face{
+  font-family:"Inter"; src:url("fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+#about-us-popup{
+  position:fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index:10;
+
+  background-color: white;
+  border:0.5px solid black;
+  width: 80vw;
+  height: 70vh;
+  padding:40px;
+
+  gap:10px;
+  display:none;
+}
+
+#about-us-popup.show{
+  display:flex;
+}
+
+#popup-img{
+  height:100%;
+  width:100%;
+}
+
+img{
+height:100%;
+}
+
+#popup-text p{
+  font-family: "Inter";
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: normal;
+}
+
+#popup-text h1{
+  font-family: "Inter";
+  font-size: 45px;
+  font-style:italic;
+  font-weight: bold;
+  line-height: normal;
+}
+
+#about-us-button{
+  border:0;
+  background-color:rgba(255, 154, 2, 1);
+  cursor:pointer;
+  padding:5px 15px;
+
+  color:white;
+  font-family: "Inter";
+  font-weight:bold;
+}
+
+#about-us-button:hover{
+  padding:6px 16px;
+}
+
+#about-us-button:active{
+  padding:5px 15px;
+}
+
+#close_button{
+  position:absolute;
+  top:-35px;
+  right:-19px;
+  background-color:rgba(0, 0, 0, 0);
+  border:none;
+  cursor:pointer;
+  font-size:50px;
+}
+
+#close_button:hover{
+  font-size:52px;
+}
+
+#close_button:active{
+  font-size:50px;
+}
+
+
+#overlay_aboutUs {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(83, 83, 83, 0.851);
+  pointer-events: none;
+}
+
+#overlay_aboutUs.active {
+  opacity: 1;
+  pointer-events: all;
+}
