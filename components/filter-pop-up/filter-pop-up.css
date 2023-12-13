@@ -1,0 +1,70 @@
+#filterMain {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 260px;
+    color: white;
+
+}
+
+
+#filterReset {
+    display: inline;
+    padding-left: 2px;
+}
+
+
+#filterReset:hover {
+    cursor: pointer;
+}
+
+
+#filterCountry {
+    padding-left: 20px;
+}
+
+
+#filterCountry>div>input {
+    border-radius: 80px;
+}
+
+
+#filterCountry>div>input:hover {
+    cursor: pointer;
+}
+
+
+#filterCountry>div>label {
+    cursor: pointer;
+}
+
+
+#filterPrice {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+
+#filterPrice>input {
+    width: 120px;
+    display: flex;
+}
+
+
+#filterType {
+    padding-left: 20px;
+}
+
+
+#filterType>div>input:hover {
+    cursor: pointer;
+}
+
+
+#filterType>div>label {
+    cursor: pointer;
+}
+
+
+.checkbox-inline {
+    border-radius: 80px;
+}
