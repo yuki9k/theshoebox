@@ -11,7 +11,7 @@ const COUNTRIES = [
 ];
 
 const KINDS = [
-  { id: 1, name: "Tofflor" },
+  { id: 1, name: "Slippers" },
   { id: 2, name: "Boots" },
   { id: 3, name: "Sneakers" },
 ];
