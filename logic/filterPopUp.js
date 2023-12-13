@@ -57,17 +57,3 @@ maxPriceSlider.addEventListener('mouseup', filter)
 
 
 
-function get_checked_ids(arr) {
-    FILTER_MAP = Object.fromEntries(arr.map(x => [x.name, x.id]));
-    new_arr = []
-    for (let i = 0; i < checkboxes.length; i++) {
-
-
-        // If checkbox name is in FILTER_MAP keys and is ticked
-        if (checkboxes[i].id in FILTER_MAP && checkboxes[i].checked) {
-            // Find corresponding id of checkbox name
-            new_arr.push(FILTER_MAP[checkboxes[i].id]);
-        }
-    }
-    return new_arr;
-}
