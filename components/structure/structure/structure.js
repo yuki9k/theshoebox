@@ -3,10 +3,10 @@
 function renderStructure() {
     const container = document.querySelector("#wrapper");
     container.innerHTML = `
-    <div id="free-shipping"></div>
+    <div id="free-shipping">Free shipping on all orders in EU</div>
     <header>
-        <div id="search-bar"></div>
-        <h1 id="page-title"></h1>
+        <div id="search-bar">Search</div>
+        <h1 id="page-title">THE.SHOE.BOX</h1>
         <div id="header-icons"></div>
     </header>
     <div id="filter-bar">
