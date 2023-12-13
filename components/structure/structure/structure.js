@@ -4,10 +4,11 @@ function render_structure() {
     container.innerHTML = `
     <div id="free-shipping">Free shipping on all orders in EU</div>
     <header>
-        <div id="search-bar"></div>
-        <h1 id="page-title">THE.SHOE.BOX</h1>
-        <div id="header-icons"></div>
-    </header>
+    <div id="header-icons">
+        <div id="search-bar">search</div>
+    </div>
+    <h1 id="page-title">THE.SHOE.BOX</h1>
+</header>
     <div id="filter-bar">
         <div id="filter-left">
             <div id="filter-button">
