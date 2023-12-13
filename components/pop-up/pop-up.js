@@ -11,8 +11,8 @@ function closeModal(modal) {
 function renderProductPopUp(event) {
   const shoeId = event.currentTarget.dataset.id;
   const shoe = getProductInfo(event.currentTarget);
-  const shoeReviews = getProductReviews(event.currentTarget.dataset.id);
-  const averageScore = calculateAverageScoreByShoeId(shoeReviews);
+  const shoeReviews = getProductReviews(shoeId);
+  const averageScoreArray = calculateAverageScoreByShoeId(shoeReviews);
   let productPopUp = document.createElement("div");
   productPopUp.setAttribute("id", "pop-up-shoe");
   productPopUp.innerHTML = `
@@ -26,7 +26,7 @@ function renderProductPopUp(event) {
         <h2 class="info">${shoe.name}</h2>
         <p class="price">${shoe.price} kr</p>
         <div class="star">
-          <p>${averageScore[shoeId]}</p>
+          <p>${averageScoreArray[shoeId]}</p>
           <img src="media/icons/star-full-icon-orange.png" alt="">
           <p>(${getNumberOfReviews(event.currentTarget.dataset.id)})</p>
         </div>
