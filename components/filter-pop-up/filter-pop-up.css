@@ -2,14 +2,25 @@
     background-color: rgba(0, 0, 0, 0.5);
     width: 260px;
     color: white;
+    
+    padding-bottom: 10px;
 
+}
+
+#filterMain>div>input{
+    accent-color: orange;
+}
+
+#filterMain>div>div>input:checked{
+    accent-color: orange;
 }
 
 
 #filterReset {
-    display: inline;
+    
     padding-left: 2px;
     font-family: "InterMedium";
+    margin-bottom: 10px;
 }
 
 
@@ -67,9 +78,14 @@
     font-family: "InterRegular";
 }
 
+#filterPrice>input:hover{
+    cursor: pointer;
+}
+
 
 #filterType {
     padding-left: 20px;
+    
 }
 
 #filterType>h2 {
@@ -91,6 +107,3 @@
 }
 
 
-.checkbox-inline {
-    border-radius: 80px;
-}

@@ -19,7 +19,7 @@ function reset() {
 
 
     // Reset slider
-    maxPriceSlider.value = (parseInt(maxPriceSlider.min) + parseInt(maxPriceSlider.max)) / 2;
+    maxPriceSlider.value = parseInt(maxPriceSlider.max)
 
 
     // Reset price output

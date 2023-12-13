@@ -41,7 +41,7 @@ function render_filter_pop_up(parent) {
     </div>
     <div id="filterPrice">
         <h2>MAX PRICE</h2>
-        <input id="maxPrice" type="range" min="209" max="1000" step="10" value="1000">
+        <input id="maxPrice" type="range" min="210" max="1000" step="10" value="1000">
         <output for="maxPrice" id="priceOutput">1000</output>
     </div>
     <div id="filterType">
