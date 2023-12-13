@@ -20,6 +20,7 @@ header {
 #filter-bar {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 /* LEFT SIDE OF FILTER BAR */
@@ -33,6 +34,7 @@ header {
 
 #filter-popup {
     display: none;
+    position: absolute;
 }
 
 #active-filters {}
