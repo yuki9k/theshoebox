@@ -27,18 +27,3 @@ const averageScoreByShoeId = calculateAverageScoreByShoeId(REVIEWS);
 
 // console.log("Average Score by Shoe ID:", averageScoreByShoeId);
 
-for (let shoe of SHOES) {
-  const grade = document.createElement("div");
-  grade.innerHTML = `
-    <div class="modal-bottom">
-    <div>
-        <img src="" alt="">
-        <p></p>
-        <p></p>
-    </div>
-        <p>Shoe ID: ${shoe.shoe_id}</p>
-        <p>Score: ${shoe.score}</p>
-        <p>Review: ${shoe.rev}</p>
-    </div>
-    `;
-}

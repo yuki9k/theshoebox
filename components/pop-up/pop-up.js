@@ -76,4 +76,6 @@ function renderProductPopUp(event) {
   }
 
   setTimeout(addActiveClasses, 1);
+
+  shoereviews()
 }
