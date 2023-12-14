@@ -1,5 +1,5 @@
 #filterMain {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.66);
     width: 260px;
     color: white;
     
@@ -17,10 +17,11 @@
 
 
 #filterReset {
-    
-    padding-left: 2px;
-    font-family: "InterMedium";
-    margin-bottom: 10px;
+    font-family: "InterRegular";
+    font-weight:lighter; 
+    text-align:center;
+    padding-bottom:5px;
+    letter-spacing:2px;
 }
 
 
@@ -34,11 +35,18 @@
 }
 
 #filterCountry>h2 {
-    font-family: "InterBold";
+    font-family: "InterRegular";
+    font-weight:lighter; 
+    text-align:center;
+    padding-bottom:5px;
+    letter-spacing:0.7px;
 }
 
 #filterCountry>div {
     font-family: "InterRegular";
+    font-weight:bold;
+    padding:5px;
+    letter-spacing:2px;
 }
 
 
@@ -64,8 +72,11 @@
 }
 
 #filterPrice>h2 {
-    font-family: "InterBold";
-
+    font-family: "InterRegular";
+    font-weight:lighter; 
+    text-align:center;
+    padding: 5px 0 10px 0;
+    letter-spacing:0.7px;
 }
 
 
@@ -89,11 +100,18 @@
 }
 
 #filterType>h2 {
-    font-family: "InterBold";
+    font-family: "InterRegular";
+    font-weight:lighter; 
+    text-align:center;
+    padding:10px 0 10px 0;
+    letter-spacing:0.7px;
 }
 
 #filterType>div {
     font-family: "InterRegular";
+    font-weight:bold;
+    padding:5px;
+    letter-spacing:2px;
 }
 
 
