@@ -60,7 +60,5 @@ function render_filter_pop_up(parent) {
         </div>
     </div>
     `
-
-
     parent.appendChild(filterMain)
 }
