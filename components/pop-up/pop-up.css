@@ -194,6 +194,7 @@ div .modal-right {
   margin-left: 10px;
   gap: 10px;
   margin-top: 10px;
+  margin-bottom: -25px;
 }
 
 .details-box:hover {
@@ -209,4 +210,10 @@ div .modal-right {
   height: 16px;
   width: 10px;
   margin-top: 4px;
+}
+
+.flag_pop_up {
+  height: 50px;
+  width: 50px;
+  margin-left: 10px;
 }
