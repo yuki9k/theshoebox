@@ -1,7 +1,6 @@
-function shoeReviews(shoeId) {
+function renderShoeReviews(shoeReviews) {
 
-  const shoeReviews = getProductReviews(shoeId);
-  console.log(shoeReviews);
+  // const shoeReviews = getProductReviews(shoeId);
 
   for (let review of shoeReviews) {
     const grade = document.createElement("div");
