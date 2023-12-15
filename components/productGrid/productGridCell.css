@@ -1,0 +1,60 @@
+.product-cell {
+    border: 2px solid black;
+    width: 100%;
+    position: relative;
+    transition: all .1s ease-in-out;
+}
+
+.product-cell:hover {
+    border: 2px solid orange;
+    transform: scale(101%);
+    cursor: pointer;
+}
+
+.product-cell:hover>.shoe-pic>img {
+    border-color: orange;
+}
+
+.flag {
+    display: flex;
+    justify-content: flex-end;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 16px;
+}
+
+.flag>img {
+    height: 100%;
+}
+
+.shoe-pic>img {
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+
+.shoe-information {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.shoe-type {
+    font-family: "InterRegular";
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.shoe-name {
+    font-family: "InterBold";
+    text-transform: uppercase;
+}
+
+.shoe-price {
+    font-family: "InterMedium";
+    font-size: 1.7rem;
+}

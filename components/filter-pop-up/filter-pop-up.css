@@ -1,0 +1,134 @@
+/* Filter pop-up måste läggas till i inner html när den tas bort från structure */
+#filter-popup{
+    z-index:1;
+    display:none;
+    position:absolute;
+}
+
+#filterMain {
+    background-color: rgba(0, 0, 0, 0.66);
+    width: 260px;
+    color: white;
+    
+    padding-bottom: 10px;
+
+}
+
+#filterMain>div>input{
+    accent-color: orange;
+}
+
+#filterMain>div>div>input:checked{
+    accent-color: orange;
+}
+
+
+#filterReset {
+    font-family: "InterRegular";
+    font-weight:lighter; 
+    text-align:center;
+    padding-bottom:5px;
+    letter-spacing:2px;
+}
+
+
+#filterReset:hover {
+    cursor: pointer;
+}
+
+
+#filterCountry {
+    padding-left: 20px;
+}
+
+#filterCountry>h2 {
+    font-family: "InterRegular";
+    font-weight:lighter; 
+    text-align:center;
+    padding-bottom:5px;
+    letter-spacing:0.7px;
+}
+
+#filterCountry>div {
+    font-family: "InterRegular";
+    font-weight:bold;
+    padding:5px;
+    letter-spacing:2px;
+}
+
+
+#filterCountry>div>input {
+    border-radius: 80px;
+}
+
+
+#filterCountry>div>input:hover {
+    cursor: pointer;
+}
+
+
+#filterCountry>div>label {
+    cursor: pointer;
+}
+
+
+#filterPrice {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+#filterPrice>h2 {
+    font-family: "InterRegular";
+    font-weight:lighter; 
+    text-align:center;
+    padding: 5px 0 10px 0;
+    letter-spacing:0.7px;
+}
+
+
+#filterPrice>input {
+    width: 220px;
+    display: flex;
+}
+
+#filterPrice>output {
+    font-family: "InterRegular";
+}
+
+#filterPrice>input:hover{
+    cursor: pointer;
+}
+
+
+#filterType {
+    padding-left: 20px;
+    
+}
+
+#filterType>h2 {
+    font-family: "InterRegular";
+    font-weight:lighter; 
+    text-align:center;
+    padding:10px 0 10px 0;
+    letter-spacing:0.7px;
+}
+
+#filterType>div {
+    font-family: "InterRegular";
+    font-weight:bold;
+    padding:5px;
+    letter-spacing:2px;
+}
+
+
+#filterType>div>input:hover {
+    cursor: pointer;
+}
+
+
+#filterType>div>label {
+    cursor: pointer;
+}
+
+
