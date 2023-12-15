@@ -28,15 +28,22 @@ function renderStructure() {
     </div>
     <main id="product-grid"></main>
     <footer>
-        <div id="footer-left">
-            <div id="about-us-button">
-                <div id="about-us-popup"></div>
-            </div>
+    <div id="footer-left">
+      <p>INFORMATION</p>
+
+        <div id="footer-nav">
+            <nav> <a href="">ABOUT US</a></nav>
         </div>
-        <div id="footer-right">
-            <div id="email-container"></div>
+    </div>        
+    <div id="footer-right">
+        <p>Sign up to get 10% off your first order</p>
+        <div id="email-container">
+            <input type="SIGN UP" placeholder="ENTER EMAIL" class="email-container-1">
+            <input type="submit" value="SIGN UP" class="footer-email.btn">
+            <p>You´ll be the first to know about exclusive products launches, sales and much more. </p>
         </div>
-    </footer>`;
+    </div>
+</footer>`;
 
     return {
         freeShipping: container.querySelector("#free-shipping"),
@@ -54,7 +61,7 @@ function renderStructure() {
         productGrid: container.querySelector("#product-grid"),
         footer: container.querySelector("footer"),
         footerLeft: container.querySelector("#footer-left"),
-        aboutUsButton: container.querySelector("#about-us-button"),
+        footernav: container. querySelector("foter-nav"),
         aboutUsPopup: container.querySelector("#about-us-popup"),
         footerRight: container.querySelector("#footer-right"),
         emailContainer: container.querySelector("#email-container")
