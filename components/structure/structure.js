@@ -28,4 +28,6 @@ function renderStructure() {
         // footerRight: container.querySelector("#footer-right"),
         // emailContainer: container.querySelector("#email-container")
     }
+
 }
+

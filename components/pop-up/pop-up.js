@@ -40,7 +40,8 @@ function renderProductPopUp(event) {
           <p>DETAILS</p>
           <img src="media/icons/thin-arrow-bottom-icon.png" alt="">
         </div>
-    </div>
+        <img class="flag_pop_up" src="media/flags/${shoe.country_id}.png">
+      </div>
     <button data-close-button class="close-button">&times;</button>
     <div class="modal-bottom">
         <div id="grade"></div>

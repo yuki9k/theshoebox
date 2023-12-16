@@ -2,11 +2,18 @@ body {
     margin: 0;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+
 #search-bar {
     font-family:  "InterRegular";
     position: relative;
     color: black;
-    text-align: center;
     align-items: center;
     font-size: 18px;
     margin-left: 60px;
@@ -23,10 +30,9 @@ body {
 }
 
 
-header {
+#items {
     display: flex;
     justify-content: space-between;
-    align-items: center; 
     background-color: white;
     color: black;
     border-bottom: solid 2px black;
@@ -41,8 +47,12 @@ header {
 
 #page-title {
     font-family: "InterBold";
-    flex-grow: 1; 
     text-align: center; 
-    margin-right: 108px;
+    margin-right: 110px;
     font-size: 41px;
 }
+
+.header-icon {
+    background-image: url('/icons/icons/bag-icon.png');
+    /* Ange storlek, position, etc. */
+  }
