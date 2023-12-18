@@ -10,14 +10,14 @@ const maxPriceSlider = document.getElementById('maxPrice');
 maxPriceSlider.addEventListener('input', updateMaxPrice);
 function updateMaxPrice() {
     priceOutput.textContent = maxPriceSlider.value;
-}
+};
 
 
 function reset() {
     // Reset checkboxes
     checkboxes.forEach(function (checkbox) {
         checkbox.checked = false;
-    })
+    });
 
 
     // Reset slider
@@ -30,7 +30,7 @@ function reset() {
 
     // Adds filter upon reset
     filter();
-}
+};
 
 
 // Handle reset
@@ -86,7 +86,7 @@ function filter() {
     }
 
     return new_arr;
-}
+};
 
 
 function get_checked_ids(arr) {
@@ -102,10 +102,4 @@ function get_checked_ids(arr) {
         }
     }
     return new_arr;
-}
-
-
-
-
-
-
+};
