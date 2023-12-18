@@ -2,7 +2,7 @@ body {
     margin: 0;
 }
 
-header {
+.header {
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -28,7 +28,6 @@ header {
     text-align: center;
     font-size: 18px;
 }
-
 
 #items {
     display: flex;
