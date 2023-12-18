@@ -73,6 +73,7 @@
   font-family: "InterMedium";
   font-size: 1.2rem;
   margin: 5px 0 5px 10px;
+  color: black;
 
 }
 
@@ -182,6 +183,10 @@ div .modal-right {
   font-size: 1.2rem;
   font-family: "InterRegular";
   color: black;
+}
+
+.info {
+  margin: 20px 0 0 10px;
 }
 
 .details-box {
