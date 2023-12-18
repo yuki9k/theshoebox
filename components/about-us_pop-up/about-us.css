@@ -8,14 +8,13 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
-
   background-color: white;
   border: 0.5px solid black;
   width: 80vw;
   height: 70vh;
   padding: 40px;
-
   gap: 10px;
+  border-radius: 10px;
 }
 
 #about-us-modal {
