@@ -1,4 +1,5 @@
 "use strict"
+
 const priceOutput = document.getElementById('priceOutput');
 const defaultValue = priceOutput.defaultValue;
 const checkboxes = document.querySelectorAll('input[type="checkbox"]');
