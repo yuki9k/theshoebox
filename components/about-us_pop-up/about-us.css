@@ -8,14 +8,13 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
-
   background-color: white;
   border: 0.5px solid black;
   width: 80vw;
   height: 70vh;
   padding: 40px;
-
   gap: 10px;
+  border-radius: 10px;
 }
 
 #about-us-modal {
@@ -41,19 +40,18 @@ img {
 }
 
 #popup-text p {
-  font-family: "Inter";
+  font-family: "InterRegular";
   font-size: 25px;
-  font-style: italic;
   font-weight: 500;
   line-height: normal;
 }
 
 #popup-text h1 {
-  font-family: "Inter";
+  font-family: "InterRegular";
   font-size: 45px;
-  font-style: italic;
   font-weight: bold;
   line-height: normal;
+  margin-bottom: 20px;
 }
 
 #about-us-button {
@@ -61,10 +59,9 @@ img {
   background-color: rgba(255, 154, 2, 1);
   cursor: pointer;
   padding: 5px 15px;
-
   color: white;
-  font-family: "Inter";
   font-weight: bold;
+  border-radius: 5px;
 }
 
 #about-us-button:hover {
@@ -75,14 +72,17 @@ img {
   padding: 5px 15px;
 }
 
-#close_button {
+#close-button-about-us {
   position: absolute;
-  top: -35px;
-  right: -19px;
   background-color: rgba(0, 0, 0, 0);
   border: none;
+  outline: none;
+  background: none;
   cursor: pointer;
-  font-size: 50px;
+  font-size: 30px;
+  top: -5px;
+  right: 5px;
+
 }
 
 #close_button:hover {
@@ -101,3 +101,4 @@ img {
   bottom: 0;
   background-color: rgba(83, 83, 83, 0.851);
 }
+
