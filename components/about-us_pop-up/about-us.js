@@ -1,12 +1,12 @@
 "use strict";
 
-function renderAboutUsPopUp(parent) {
+function createAboutUsPopUp(parent) {
   let aboutUsPopUp = document.createElement("div");
   aboutUsPopUp.setAttribute("id", "about-us-popup");
   aboutUsPopUp.innerHTML = `
   <div id="footer-left">
 
-  <button id="about-us-button">ABOUT US</button> 
+  <button>ABOUT US</button> 
   <div id="about-us-popup">
 
   <div id="popup-text">
@@ -28,7 +28,9 @@ function renderAboutUsPopUp(parent) {
   <div id="overlay_aboutUs"></div>`;
 
   parent.appendChild(aboutUsPopUp);
+};
 
+function renderAboutUsPopUp() {
   const modal = document.getElementById('about-us-popup');
   const overlay = document.getElementById('overlay_aboutUs');
   const openButton = document.getElementById('about-us-button');
@@ -40,6 +42,7 @@ function renderAboutUsPopUp(parent) {
   }
 
   function openModal() {
+    debugger;
     modal.classList.add('show');
     overlay.classList.add('active');
   }
@@ -47,5 +50,4 @@ function renderAboutUsPopUp(parent) {
   openButton.addEventListener('click', openModal);
   closeButton.addEventListener('click', closeModal(modal));
   overlay.addEventListener('click', closeModal);
-};
-
+}
