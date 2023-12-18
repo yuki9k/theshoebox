@@ -62,5 +62,5 @@ function render_filter_pop_up(parent) {
     `
 
 
-    parent.appendChild(filterMain)
+    parent.appendChild(filterMain);
 }
