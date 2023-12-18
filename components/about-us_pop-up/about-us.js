@@ -1,6 +1,6 @@
 "use strict";
 
-function renderAboutUsPopUp() {
+function renderAboutUsPopUp(parent) {
   let aboutUsPopUp = document.createElement("div");
   aboutUsPopUp.setAttribute("id", "about-us-popup");
   aboutUsPopUp.innerHTML = `
@@ -29,21 +29,25 @@ function renderAboutUsPopUp() {
   parent.appendChild(aboutUsPopUp);
 };
 
-const modal = document.getElementById('about-us-popup');
-const openButton = document.getElementById('about-us-button');
-const closeButton = document.getElementById('close_button');
-const overlay = document.getElementById('overlay_aboutUs');
-
 function openModal() {
+  const modal = document.getElementById('about-us-popup');
+  const overlay = document.getElementById('overlay_aboutUs');
   modal.classList.add('show');
   overlay.classList.add('active');
 }
 
 function closeModal() {
+  const modal = document.getElementById('about-us-popup');
+  const overlay = document.getElementById('overlay_aboutUs');
   modal.classList.remove('show');
   overlay.classList.remove('active');
 }
 
-openButton.addEventListener('click', openModal);
-closeButton.addEventListener('click', closeModal);
-overlay.addEventListener('click', closeModal);
+function addAboutUsFunctionality() {
+  const openButton = document.getElementById('about-us-button');
+  const closeButton = document.getElementById('close_button');
+  const overlay = document.getElementById('overlay_aboutUs');
+  openButton.addEventListener('click', openModal);
+  closeButton.addEventListener('click', closeModal);
+  overlay.addEventListener('click', closeModal);
+}
