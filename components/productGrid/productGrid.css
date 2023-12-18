@@ -6,3 +6,7 @@
     width: 70dvw;
     margin: 30px auto;
 }
+
+.four-columns {
+    grid-template-columns: repeat(4, 1fr) !important;
+}

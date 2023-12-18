@@ -10,8 +10,8 @@ function renderfilterbar(parent) {
              
   <div class="navright">
     <p>VIEW</p>
-    <div><img src="media/icons/tkol.png" alt=""></div>
-    <div><img src="media/icons/fcol.png" alt=""></div>
+    <div id="three-columns-button"><img src="media/icons/tkol.png" alt=""></div>
+    <div id="four-columns-button"><img src="media/icons/fcol.png" alt=""></div>
   </div>
 `;
 
@@ -20,5 +20,13 @@ function renderfilterbar(parent) {
   filterButton.addEventListener('click', (e) => {
     e.stopPropagation();
     document.querySelector("#filterMain").classList.toggle("filter-popup-show");
-  })
+  });
+
+  document.querySelector("#three-columns-button").addEventListener("click", () => {
+    document.querySelector("#product-grid").classList.remove("four-columns");
+  });
+
+  document.querySelector("#four-columns-button").addEventListener("click", () => {
+    document.querySelector("#product-grid").classList.add("four-columns");
+  });
 };
