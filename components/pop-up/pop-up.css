@@ -125,7 +125,6 @@
 .bag {
   height: 40px;
   width: 120px;
-  /* border: 1px solid black; */
   margin: 10px;
   display: flex;
   justify-content: center;
@@ -134,7 +133,6 @@
   background-color: black;
   font-family: "InterBold";
   font-size: 1rem;
-
   transition: all .2s ease-in-out;
 }
 
