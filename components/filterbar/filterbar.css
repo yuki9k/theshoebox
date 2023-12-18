@@ -15,11 +15,14 @@
     height: auto; 
 }
 
+img {
+    height: 60px;
+    object-fit: cover;
+}
+
 .navleft img {
     padding-top: 5px;
     padding-left: 20px;
-    height: 60px;
-    object-fit: cover;
 }
 
 .navleft img:hover {
@@ -41,8 +44,6 @@
 
 .navright img {
     padding-right:10px;
-    height: 60px;
-    object-fit: cover;
 }
 
 .navright img:hover {
