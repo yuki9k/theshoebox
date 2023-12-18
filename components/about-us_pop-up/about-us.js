@@ -20,34 +20,32 @@ function renderAboutUsPopUp(parent) {
    <img src="media/image12.png" alt="Picture of project members">
   </div>
 
-   <button id="close_button">&times;</button>
+   <button id="close-button-about-us
+">&times;</button>
 
   </div>
 
   <div id="overlay_aboutUs"></div>`;
 
   parent.appendChild(aboutUsPopUp);
+
+  const modal = document.getElementById('about-us-popup');
+  const overlay = document.getElementById('overlay_aboutUs');
+  const openButton = document.getElementById('about-us-button');
+  const closeButton = document.getElementById('close-button-about-us');
+
+  function closeModal(modal) {
+    modal.classList.remove('show');
+    overlay.classList.remove('active');
+  }
+
+  function openModal() {
+    modal.classList.add('show');
+    overlay.classList.add('active');
+  }
+
+  openButton.addEventListener('click', openModal);
+  closeButton.addEventListener('click', closeModal(modal));
+  overlay.addEventListener('click', closeModal);
 };
 
-function openModal() {
-  const modal = document.getElementById('about-us-popup');
-  const overlay = document.getElementById('overlay_aboutUs');
-  modal.classList.add('show');
-  overlay.classList.add('active');
-}
-
-function closeModal() {
-  const modal = document.getElementById('about-us-popup');
-  const overlay = document.getElementById('overlay_aboutUs');
-  modal.classList.remove('show');
-  overlay.classList.remove('active');
-}
-
-function addAboutUsFunctionality() {
-  const openButton = document.getElementById('about-us-button');
-  const closeButton = document.getElementById('close_button');
-  const overlay = document.getElementById('overlay_aboutUs');
-  openButton.addEventListener('click', openModal);
-  closeButton.addEventListener('click', closeModal);
-  overlay.addEventListener('click', closeModal);
-}
