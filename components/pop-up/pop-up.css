@@ -158,14 +158,11 @@ div .modal-right {
 .size {
   font-family: "InterRegular";
   font-size: 1.2rem;
+  color: black;
 }
 
 .size-container:hover {
   cursor: pointer;
-}
-
-.info {
-  margin: 20px 0 0 10px;
 }
 
 .star {
@@ -184,6 +181,7 @@ div .modal-right {
   align-self: center;
   font-size: 1.2rem;
   font-family: "InterRegular";
+  color: black;
 }
 
 .details-box {
@@ -202,6 +200,7 @@ div .modal-right {
 .details-box>p {
   font-family: "InterMedium";
   font-size: 1rem;
+  color: black;
 }
 
 .details-box>img {
