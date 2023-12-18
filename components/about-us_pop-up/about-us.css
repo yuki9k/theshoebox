@@ -40,17 +40,15 @@ img {
 }
 
 #popup-text p {
-  font-family: "Inter";
+  font-family: "InterRegular";
   font-size: 25px;
-  font-style: italic;
   font-weight: 500;
   line-height: normal;
 }
 
 #popup-text h1 {
-  font-family: "Inter";
+  font-family: "InterRegular";
   font-size: 45px;
-  font-style: italic;
   font-weight: bold;
   line-height: normal;
 }
@@ -99,3 +97,4 @@ img {
   bottom: 0;
   background-color: rgba(83, 83, 83, 0.851);
 }
+
