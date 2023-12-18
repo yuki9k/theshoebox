@@ -71,4 +71,5 @@ function renderProductPopUp(event) {
   }
 
   setTimeout(addActiveClasses, 1);
+  renderShoeReviews(shoeReviews);
 };

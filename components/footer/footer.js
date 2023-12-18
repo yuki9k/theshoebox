@@ -1,5 +1,10 @@
 "use strict";
 
+function closeModal(modal) {
+    if (modal == null) return;
+    modal.classList.remove('show');
+};
+
 function renderfooter(parent) {
     let footer = document.createElement("div");
     footer.classList.add("footer-left")
@@ -8,7 +13,7 @@ function renderfooter(parent) {
 <p>INFORMATION</p>
 
 <div class="footer-nav">
-<nav> <a id="about-us-button" href="">ABOUT US</a></nav>
+<div id="about-us-button">ABOUT US</div>
 </div>
 </div>        
 <div class="footer-right">
@@ -22,5 +27,22 @@ function renderfooter(parent) {
 ` ;
     parent.appendChild(footer);
 
-    document.getElementById("about-us-button").addEventListener("click", renderAboutUsPopUp);
+
+
+    document.getElementById("about-us-button").addEventListener("click", (e) => {
+        const modal = document.getElementById('about-us-popup');
+        const overlay = document.getElementById('overlay_aboutUs');
+        const closeButton = document.getElementById('close-button-about-us');
+        modal.classList.add('show');
+
+        overlay.addEventListener("click", (e) => {
+            e.stopPropagation();
+            closeModal(modal);
+        });
+
+        closeButton.addEventListener("click", (e) => {
+            e.stopPropagation();
+            closeModal(modal);
+        });
+    });
 };
