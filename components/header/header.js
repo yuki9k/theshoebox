@@ -20,3 +20,4 @@ function renderHeader (header) {
     </div>
     `;
 }
+
