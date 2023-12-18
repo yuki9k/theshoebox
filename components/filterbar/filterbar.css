@@ -5,8 +5,7 @@
     margin: 0;
     height: 75px;
     width: 100%;
-    border-top: solid grey;
-    border-bottom: solid grey;
+    border-bottom: 2px solid black;
     display: grid;
     grid-template-columns: auto auto;
 }

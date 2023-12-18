@@ -8,11 +8,11 @@ function renderfilterbar(parent) {
   <div id="filter-button"><img src="icons/icons/filterbar.png" alt=""></div>
 </div>  
              
-<div class="navright">
-  <p>View</p>
-  <div><img src="icons/icons/tkol.png" alt=""></div>
-  <div><img src="icons/icons/fcol.png" alt=""></div>
-</div>
+  <div class="navright">
+    <p>View</p>
+    <div><img src="media/icons/tkol.png" alt=""></div>
+    <div><img src="media/icons/fcol.png" alt=""></div>
+  </div>
 `;
 
   parent.appendChild(filterBar);
