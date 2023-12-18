@@ -1,8 +1,8 @@
 "use strict"
 
 function render_filter_pop_up(parent) {
-    let filterMain = document.createElement("div")
-    filterMain.setAttribute("id", "filterMain")
+    let filterMain = document.createElement("div");
+    filterMain.setAttribute("id", "filterMain");
     filterMain.innerHTML = `<div id="filterReset">RESET FILTERS</div>
     <div id="filterCountry">
         <h2>SHOP BY COUNTRY</h2>
@@ -59,8 +59,8 @@ function render_filter_pop_up(parent) {
             <label for="Slippers">SLIPPERS</label>
         </div>
     </div>
-    `
+    `;
 
 
-    parent.appendChild(filterMain)
+    parent.appendChild(filterMain);
 }

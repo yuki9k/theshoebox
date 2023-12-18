@@ -22,7 +22,6 @@
     accent-color: orange;
 }
 
-
 #filterReset {
     font-family: "InterRegular";
     font-weight:lighter; 
@@ -31,11 +30,9 @@
     letter-spacing:2px;
 }
 
-
 #filterReset:hover {
     cursor: pointer;
 }
-
 
 #filterCountry {
     padding-left: 20px;
@@ -66,11 +63,9 @@
     cursor: pointer;
 }
 
-
 #filterCountry>div>label {
     cursor: pointer;
 }
-
 
 #filterPrice {
     display: flex;
@@ -86,7 +81,6 @@
     letter-spacing:0.7px;
 }
 
-
 #filterPrice>input {
     width: 220px;
     display: flex;
@@ -99,7 +93,6 @@
 #filterPrice>input:hover{
     cursor: pointer;
 }
-
 
 #filterType {
     padding-left: 20px;
@@ -121,11 +114,9 @@
     letter-spacing:2px;
 }
 
-
 #filterType>div>input:hover {
     cursor: pointer;
 }
-
 
 #filterType>div>label {
     cursor: pointer;

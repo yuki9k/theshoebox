@@ -1,6 +1,7 @@
+"use strict"
 const priceOutput = document.getElementById('priceOutput');
-const defaultValue = priceOutput.defaultValue
-const checkboxes = document.querySelectorAll('input[type="checkbox"]')
+const defaultValue = priceOutput.defaultValue;
+const checkboxes = document.querySelectorAll('input[type="checkbox"]');
 const maxPriceSlider = document.getElementById('maxPrice');
 
 
@@ -19,24 +20,24 @@ function reset() {
 
 
     // Reset slider
-    maxPriceSlider.value = parseInt(maxPriceSlider.max)
+    maxPriceSlider.value = parseInt(maxPriceSlider.max);
 
 
     // Reset price output
-    updateMaxPrice()
+    updateMaxPrice();
 
 
     // Adds filter upon reset
-    filter()
+    filter();
 }
 
 
 // Handle reset
-const resetbtn = document.getElementById("filterReset")
-resetbtn.addEventListener('click', reset)
-resetbtn.addEventListener('click', () => renderProductCell(structureContainers.productGrid, filter()))
-window.addEventListener('beforeunload', reset)
-window.addEventListener('beforeunload', () => renderProductCell(structureContainers.productGrid, filter()))
+const resetbtn = document.getElementById("filterReset");
+resetbtn.addEventListener('click', reset);
+resetbtn.addEventListener('click', () => renderProductCell(structureContainers.productGrid, filter()));
+window.addEventListener('beforeunload', reset);
+window.addEventListener('beforeunload', () => renderProductCell(structureContainers.productGrid, filter()));
 
 
 
@@ -51,7 +52,7 @@ KINDS.forEach(
 )
 
 
-maxPriceSlider.addEventListener('mouseup', () => renderProductCell(structureContainers.productGrid, filter()))
+maxPriceSlider.addEventListener('mouseup', () => renderProductCell(structureContainers.productGrid, filter()));
 
 
 
@@ -72,8 +73,8 @@ function filter() {
 
 
         isFromCountry = noCountrySelected || country_ids.includes(SHOES[i].country_id);
-        isBelowMaxPrice = maxPriceSlider.value >= SHOES[i].price
-        isCorrectShoeType = noShoeTypeSelected || shoe_type_ids.includes(SHOES[i].kind_id);; // TODO
+        isBelowMaxPrice = maxPriceSlider.value >= SHOES[i].price;
+        isCorrectShoeType = noShoeTypeSelected || shoe_type_ids.includes(SHOES[i].kind_id); // TODO
 
 
         if (isFromCountry && isBelowMaxPrice && isCorrectShoeType) {
@@ -89,7 +90,7 @@ function filter() {
 
 function get_checked_ids(arr) {
     FILTER_MAP = Object.fromEntries(arr.map(x => [x.name, x.id]));
-    new_arr = []
+    new_arr = [];
     for (let i = 0; i < checkboxes.length; i++) {
 
 
