@@ -1,23 +1,15 @@
 "use strict";
 
-function closeModal(modal) {
-  if (modal == null) return
-  modal.classList.remove('active')
-  overlay.classList.remove('active')
-  document.querySelector("#pop-up-shoe").remove();
-}
-
-
 function renderProductPopUp(event) {
   const shoeId = event.currentTarget.dataset.id;
   const shoe = getProductInfo(event.currentTarget);
   const shoeReviews = getProductReviews(shoeId);
   const averageScoreArray = calculateAverageScoreByShoeId(shoeReviews);
   const shoeAverageScore = String(averageScoreArray[shoeId]);
-  let productPopUp = document.createElement("div");
+  const productPopUp = document.createElement("div");
   productPopUp.setAttribute("id", "pop-up-shoe");
   productPopUp.innerHTML = `
-  <div class="modal" id="modal">
+  <div class="modal" id="product-modal">
     <div class="modal-header">
     </div>
     <div class="modal-left">
@@ -54,13 +46,16 @@ function renderProductPopUp(event) {
 
   const closeModalButtons = document.querySelectorAll('[data-close-button]');
   const overlay = document.getElementById('overlay');
-  const modal = document.getElementById('modal');
+  const modal = document.getElementById('product-modal');
+
+  function closeModal(modal) {
+    if (modal == null) return
+    modal.remove();
+    overlay.remove();
+  }
 
   overlay.addEventListener('click', () => {
-    const modals = document.querySelectorAll('.modal.active')
-    modals.forEach(modal => {
-      closeModal(modal)
-    })
+    closeModal(modal);
   });
 
   closeModalButtons.forEach(button => {

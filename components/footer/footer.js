@@ -21,4 +21,6 @@ function renderfooter(parent) {
 
 ` ;
     parent.appendChild(footer);
+
+    document.getElementById("about-us-button").addEventListener("click", renderAboutUsPopUp);
 };
