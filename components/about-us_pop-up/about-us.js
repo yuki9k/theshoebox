@@ -27,7 +27,7 @@ function renderAboutUsPopUp(event) {
 <div id="overlay_aboutUs"></div> 
 `
 
-parent.appendChild(aboutUsPopUp)
+parent.appendChild(aboutUsPopUp);
 }
 
 const modal = document.getElementById('about-us-popup');
