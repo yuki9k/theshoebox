@@ -9,6 +9,8 @@
     display: none;
     position: absolute;
     padding: 15px;
+    left: 0;
+    top: 184px;
 }
 
 #filterMain>div>input {
