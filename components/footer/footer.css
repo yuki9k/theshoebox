@@ -8,23 +8,19 @@ footer {
 }
 
 p {
-    color:white;
-}
-
-a {
-    color:white;
-}
-a:hover {
-    color:orange;
+    color: white;
+    font-family: "InterRegular";
 }
 
 .footer-left {
     padding-left: 50px;
 }
-.footer-left p {
+
+.footer-left>p {
     padding-left: 20px;
     margin-bottom: 5px;
     margin-right: 20px;
+    font-family: "InterMedium";
 }
 
 .footer-nav {
@@ -37,16 +33,27 @@ a:hover {
 }
 
 .footer-right {
-  padding-right: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer-right p {
     color: orange;
 }
+
 .email-container {
     width: 250px;
-}
-.email-container p {
-    color: white;
+    margin-top: 10px;
 }
 
+.email-container>p {
+    margin-top: 5px;
+    color: white;
+    font-style: italic;
+}
+
+#about-us-button {
+    font-family: "InterRegular";
+}
