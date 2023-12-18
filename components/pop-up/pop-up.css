@@ -19,6 +19,8 @@
   border: 2px solid black;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(4, 1fr);
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .modal.active {
@@ -211,20 +213,6 @@ div .modal-right {
   width: 40px;
   margin-left: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .modal-bottom {
