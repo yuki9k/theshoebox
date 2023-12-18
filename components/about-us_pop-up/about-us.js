@@ -1,3 +1,4 @@
+"use strict";
 
 function renderAboutUsPopUp(event) {
   let aboutUsPopUp = document.createElement("div");
@@ -27,13 +28,13 @@ function renderAboutUsPopUp(event) {
 <div id="overlay_aboutUs"></div> 
 `
 
-parent.appendChild(aboutUsPopUp)
+parent.appendChild(aboutUsPopUp);
 }
 
 const modal = document.getElementById('about-us-popup');
 const openButton = document.getElementById('about-us-button');
 const closeButton = document.getElementById('close_button');
-const overlay = document.getElementById('overlay_aboutUs')
+const overlay = document.getElementById('overlay_aboutUs');
 
 function openModal() {
   modal.classList.add('show');
