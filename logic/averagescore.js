@@ -1,3 +1,5 @@
+"use strict";
+
 function calculateAverageScoreByShoeId(reviews) {
   const scoreSumByShoeId = {};
   const countByShoeId = {};
