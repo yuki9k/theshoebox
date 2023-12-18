@@ -60,22 +60,22 @@ maxPriceSlider.addEventListener('mouseup', () => renderProductCell(structureCont
 
 // To be added to every button/checkbox
 function filter() {
-    country_ids = get_checked_ids(COUNTRIES);
-    shoe_type_ids = get_checked_ids(KINDS);
+    let country_ids = get_checked_ids(COUNTRIES);
+    let shoe_type_ids = get_checked_ids(KINDS);
 
 
-    noCountrySelected = country_ids.length === 0;
-    noShoeTypeSelected = shoe_type_ids.length === 0;
+    let noCountrySelected = country_ids.length === 0;
+    let noShoeTypeSelected = shoe_type_ids.length === 0;
 
 
     // Find all shoes that have a country id that is in the country_ids array
-    new_arr = []
+    let new_arr = []
     for (let i = 0; i < SHOES.length; i++) {
 
 
-        isFromCountry = noCountrySelected || country_ids.includes(SHOES[i].country_id);
-        isBelowMaxPrice = maxPriceSlider.value >= SHOES[i].price;
-        isCorrectShoeType = noShoeTypeSelected || shoe_type_ids.includes(SHOES[i].kind_id); // TODO
+        let isFromCountry = noCountrySelected || country_ids.includes(SHOES[i].country_id);
+        let isBelowMaxPrice = maxPriceSlider.value >= SHOES[i].price;
+        let isCorrectShoeType = noShoeTypeSelected || shoe_type_ids.includes(SHOES[i].kind_id); // TODO
 
 
         if (isFromCountry && isBelowMaxPrice && isCorrectShoeType) {
@@ -90,8 +90,8 @@ function filter() {
 
 
 function get_checked_ids(arr) {
-    FILTER_MAP = Object.fromEntries(arr.map(x => [x.name, x.id]));
-    new_arr = [];
+    let FILTER_MAP = Object.fromEntries(arr.map(x => [x.name, x.id]));
+    let new_arr = [];
     for (let i = 0; i < checkboxes.length; i++) {
 
 

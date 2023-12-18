@@ -1,12 +1,12 @@
 "use strict";
 
-function renderfilterbar (parent) {
-let filterBar = document.createElement ("div");
-filterBar.classList.add ("bar");
-filterBar.innerHTML = `
-  <div class="navleft">
-    <div><img src="media/icons/filterbar.png" alt=""></div>
-  </div>  
+function renderfilterbar(parent) {
+  const filterBar = document.createElement("div");
+  filterBar.classList.add("bar");
+  filterBar.innerHTML = `
+<div class="navleft">
+  <div id="filter-button"><img src="media/icons/filterbar.png" alt=""></div>
+</div>  
              
   <div class="navright">
     <p>VIEW</p>
@@ -15,5 +15,10 @@ filterBar.innerHTML = `
   </div>
 `;
 
-parent.appendChild(filterBar);
+  parent.appendChild(filterBar);
+  const filterButton = document.querySelector("#filter-button > img");
+  filterButton.addEventListener('click', (e) => {
+    e.stopPropagation();
+    document.querySelector("#filterMain").classList.toggle("filter-popup-show");
+  })
 };

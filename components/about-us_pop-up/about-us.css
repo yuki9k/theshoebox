@@ -2,11 +2,6 @@
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: "Inter";
-  src: url("fonts/Inter-VariableFont_slnt\,wght.ttf");
-}
-
 #about-us-modal {
   position: fixed;
   top: 50%;
