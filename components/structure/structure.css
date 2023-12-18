@@ -32,11 +32,6 @@ header {
 
 #filter-button {}
 
-#filter-popup {
-    display: none;
-    position: absolute;
-}
-
 #active-filters {}
 
 /* RIGHT SIDE OF FILTER BAR */
