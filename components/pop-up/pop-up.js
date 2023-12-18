@@ -50,11 +50,11 @@ function renderProductPopUp(event) {
   <div id="overlay"></div>`
 
   document.body.appendChild(productPopUp);
-  document.querySelector(".modal-left").style.backgroundImage = `url(media/skobilder/${shoe.file_name})`
+  document.querySelector(".modal-left").style.backgroundImage = `url(media/skobilder/${shoe.file_name})`;
 
-  const closeModalButtons = document.querySelectorAll('[data-close-button]')
-  const overlay = document.getElementById('overlay')
-  const modal = document.getElementById('modal')
+  const closeModalButtons = document.querySelectorAll('[data-close-button]');
+  const overlay = document.getElementById('overlay');
+  const modal = document.getElementById('modal');
 
   overlay.addEventListener('click', () => {
     const modals = document.querySelectorAll('.modal.active')
