@@ -5,7 +5,7 @@ function renderfilterbar(parent) {
   filterBar.classList.add("bar");
   filterBar.innerHTML = `
 <div class="navleft">
-  <div id="filter-button"><img src="icons/icons/filterbar.png" alt=""></div>
+  <div id="filter-button"><img src="media/icons/filterbar.png" alt=""></div>
 </div>  
              
   <div class="navright">
