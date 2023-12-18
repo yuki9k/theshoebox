@@ -3,7 +3,6 @@
 function renderStructure() {
     const container = document.querySelector("#wrapper");
     container.innerHTML = `
-    
     <header>
 
     <div id="free-shipping">Free shipping on all orders in EU</div>
