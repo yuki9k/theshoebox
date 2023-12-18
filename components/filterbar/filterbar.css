@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     height: 75px;
+    width: 100%;
     border-top: solid grey;
     border-bottom: solid grey;
     display: grid;
@@ -15,7 +16,7 @@
     height: auto; 
 }
 
-img {
+.bar img {
     height: 60px;
     object-fit: cover;
 }
