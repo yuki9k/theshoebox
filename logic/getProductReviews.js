@@ -9,3 +9,11 @@ function getProductReviews(shoeId) {
     }
     return productReviews;
 }
+
+const shoeReviews = getProductReviews(shoeId);
+for (let review of shoeReviews) {
+    const reviewContainer = document.createElement("div");
+    reviewContainer.innerHTML = `
+    <p>Review Text:  ${review.score}</p>
+    `
+}

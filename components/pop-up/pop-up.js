@@ -28,7 +28,7 @@ function renderProductPopUp(event) {
         <div class="star">
           <p>${shoeAverageScore.substring(0, 3)}</p>
           <img src="media/icons/star-full-icon-orange.png" alt="">
-          <p>(${getNumberOfReviews(event.currentTarget.dataset.id)})</p>
+          <p>(${shoeReviews.length})</p>
         </div>
         <div class="size-container">
           <p class="size">41<img src="media/icons/thin-arrow-bottom-icon.png" alt=""></p>
@@ -46,7 +46,7 @@ function renderProductPopUp(event) {
         <div id="grade"></div>
     </div>
   </div>
-  <div id="overlay"></div>`
+  <div id="overlay"></div>`;
 
   document.body.appendChild(productPopUp);
   document.querySelector(".modal-left").style.backgroundImage = `url(media/skobilder/${shoe.file_name})`;
@@ -60,14 +60,14 @@ function renderProductPopUp(event) {
     modals.forEach(modal => {
       closeModal(modal)
     })
-  })
+  });
 
   closeModalButtons.forEach(button => {
     button.addEventListener('click', () => {
       const modal = button.closest('.modal')
       closeModal(modal)
     })
-  })
+  });
 
   function addActiveClasses() {
     modal.classList.add("active");
@@ -75,4 +75,4 @@ function renderProductPopUp(event) {
   }
 
   setTimeout(addActiveClasses, 1);
-}
+};
