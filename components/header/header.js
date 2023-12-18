@@ -1,8 +1,6 @@
 "use strict"
 
-function renderHeader (parent) {
-    let header = document.createElement("div");
-    header.classList.add("header");
+function renderHeader (header) {
     header.innerHTML = `
     
     <div id="free-shipping">Free shipping on all orders in EU</div>
@@ -10,17 +8,8 @@ function renderHeader (parent) {
     <div id="items">
         <div id="search-bar">Search</div>
         <h1 id="page-title">THE.SHOE.BOX</h1>
-    <div id="header-icons"></div>
+    <div id="header-icons">
+        <img src="icons/icons/
+    </div>
     `;
-
-    parent.appendChild(header);
 }
-
-/*
-<div id="free-shipping">Free shipping on all orders in EU</div>
-
-<div id="items">
-    <div id="search-bar">Search</div>
-    <h1 id="page-title">THE.SHOE.BOX</h1>
-<div id="header-icons"></div>
-*/
