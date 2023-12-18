@@ -1,14 +1,13 @@
 "use strict";
 
-function renderAboutUsPopUp(event) {
+function renderAboutUsPopUp() {
   let aboutUsPopUp = document.createElement("div");
   aboutUsPopUp.setAttribute("id", "about-us-popup");
-  aboutUsPopUp.innerHTML = 
+  aboutUsPopUp.innerHTML = `
+  <div id="footer-left">
 
-  ` <div id="footer-left">
-
-<button id="about-us-button">ABOUT US</button> 
-<div id="about-us-popup">
+  <button id="about-us-button">ABOUT US</button> 
+  <div id="about-us-popup">
 
   <div id="popup-text">
      <h1>About Us</h1>
@@ -23,13 +22,12 @@ function renderAboutUsPopUp(event) {
 
    <button id="close_button">&times;</button>
 
-</div>
+  </div>
 
-<div id="overlay_aboutUs"></div> 
-`
+  <div id="overlay_aboutUs"></div>`;
 
-parent.appendChild(aboutUsPopUp);
-}
+  parent.appendChild(aboutUsPopUp);
+};
 
 const modal = document.getElementById('about-us-popup');
 const openButton = document.getElementById('about-us-button');
