@@ -9,7 +9,7 @@ filterBar.innerHTML = `
   </div>  
              
   <div class="navright">
-    <p>View</p>
+    <p>VIEW</p>
     <div><img src="media/icons/tkol.png" alt=""></div>
     <div><img src="media/icons/fcol.png" alt=""></div>
   </div>

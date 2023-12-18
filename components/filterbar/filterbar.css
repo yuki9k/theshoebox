@@ -37,9 +37,12 @@
 }
 
 .navright p {
+    display: flex;
+    align-items: center;
     color: orange;
     padding-right:10px;
-    padding-top: 5px;
+    font-family: "InterBold";
+    font-size: 1rem;
 }
 
 .navright img {

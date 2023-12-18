@@ -9,12 +9,12 @@ header {
 }
 
 #search-bar {
-    font-family:  "InterRegular";
+    font-family:  "InterBold";
     position: relative;
     color: black;
     align-items: center;
-    font-size: 18px;
-    margin-left: 60px;
+    font-size: 1rem;
+    margin-left: 12px;
 }
 
 #free-shipping {
@@ -30,7 +30,6 @@ header {
 #items {
     display: flex;
     justify-content: space-between;
-    background-color: white;
     color: black;
     border-bottom: solid 2px black;
     padding: 10px;
@@ -38,17 +37,16 @@ header {
 }
 
 #header-icons {
-    /*display: flex;
-    align-items: center;*/
+    display: flex;
+    align-items: center;
 }
 
 #page-title {
     font-family: "InterBold";
     text-align: center; 
-    margin-right: 110px;
-    font-size: 41px;
+    font-size: 2.8rem;
 }
 
 .header-icons {
-    /* Ange storlek, position, etc. */
+    height: 100%;
   }
