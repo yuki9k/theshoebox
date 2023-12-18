@@ -1,42 +1,82 @@
-body {
-    margin: 0;
-}
 
-header {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-#search-bar {
-    font-family:  "InterBold";
-    position: relative;
-    color: black;
-    align-items: center;
-    font-size: 1rem;
-    margin-left: 12px;
+#items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100vw;
+    height: 70px;
+    padding: 0 29px;
+    border-bottom: 2px solid black;
 }
 
 #free-shipping {
-   font-family:  "InterRegular";
     background-color: black;
     color: white;
-    padding: 10px;
-    font-style: italic;
-    text-align: center;
-    font-size: 18px;
-}
-
-#items {
     display: flex;
-    color: black;
-    border-bottom: solid 2px black;
-    padding: 10px;
-    height: 70px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    font-family: "InterRegular";
+    font-size: 1rem;
 }
 
-#page-title {
-    font-family: "InterBold";
-    text-align: center; 
-    font-size: 2.8rem;
+#search-bar {
+    display: flex;
 }
+
+#search-icon {
+    height: 100%;
+    width: 40px;
+    background-image: url(../../media/icons/search-icon.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#search-bar p {
+    align-self: center;
+    font-family: "InterMedium";
+    font-size: 1rem;
+}
+
+h1 {
+    text-align: center;
+    font-family: "InterBold";
+    align-self: center;
+    font-size: 2.9rem;
+}
+
+#header-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+#user-icon {
+    height: 100%;
+    width: 40px;
+    background-image: url(../../media/icons/user-icon-orange.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#heart-icon {
+    height: 100%;
+    width: 40px;
+    background-image: url(../../media/icons/heart-thin-icon-oranges.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#bag-icon {
+    height: 100%;
+    width: 40px;
+    background-image: url(../../media/icons/bag-icon-orange.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
