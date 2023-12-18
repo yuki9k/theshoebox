@@ -1,12 +1,9 @@
 footer {
-    justify-content: space-between;
     background-color: black;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    height: 30vh;
-    display: grid;
-    grid-template: auto auto;
+    height: 30vh;    
 }
 
 p {
@@ -21,32 +18,25 @@ a:hover {
 }
 
 .footer-left {
-grid-column: 1;
+    padding-left: 50px;
 }
 .footer-left p {
-    padding-top: 40px;
     padding-left: 20px;
     margin-bottom: 5px;
+    margin-right: 20px;
 }
 
 .footer-nav {
-    margin-left: 20px;
     color: white;
-    background-color: orange;
-    width: 100px;
+    width: 100%;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
-.footer-nav:hover {
-    opacity: 100;
-    background-color: white;
-    color: orange;
-}
-
 
 .footer-right {
-  grid-column: 2;
-  padding-right: 20px;
+  padding-right: 50px;
 }
 
 .footer-right p {
