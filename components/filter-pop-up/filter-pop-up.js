@@ -63,4 +63,14 @@ function render_filter_pop_up(parent) {
 
 
     parent.appendChild(filterMain);
+
+    filterMain.addEventListener('click', (e) => {
+        e.stopPropagation();
+    })
+
+    document.body.addEventListener('click', (e) => {
+        if (filterMain.classList.contains("filter-popup-show")) {
+            filterMain.classList.remove("filter-popup-show");
+        }
+    })
 }

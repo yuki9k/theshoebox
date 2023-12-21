@@ -16,11 +16,14 @@ function renderfilterbar(parent) {
 `;
 
   parent.appendChild(filterBar);
-  const filterButton = document.querySelector("#filter-button > img");
-  filterButton.addEventListener('click', (e) => {
+
+  function togglePopupShow(e) {
     e.stopPropagation();
-    document.querySelector("#filterMain").classList.toggle("filter-popup-show");
-  });
+    document.querySelector("#filterMain").classList.toggle("filter-popup-show")
+  };
+
+  const filterButton = document.querySelector("#filter-button > img");
+  filterButton.addEventListener('click', togglePopupShow);
 
   document.querySelector("#three-columns-button").addEventListener("click", () => {
     document.querySelector("#product-grid").classList.remove("four-columns");
