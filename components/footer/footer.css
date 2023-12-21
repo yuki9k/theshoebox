@@ -4,11 +4,11 @@ footer {
     padding: 0;
     margin: 0;
     height: 150px;
-
 }
 
 footer p {
     color:white;
+    font-family: "InterMedium";
 }
 
 footer a {
@@ -26,7 +26,6 @@ footer a:hover {
     padding-left: 20px;
     margin-bottom: 5px;
     margin-right: 20px;
-    font-family: "InterMedium";
 }
 
 .footer-nav {
@@ -52,6 +51,7 @@ footer a:hover {
 .email-container {
     width: 250px;
     margin-top: 10px;
+    font-family: "InterRegular";
 }
 
 .email-container>p {
