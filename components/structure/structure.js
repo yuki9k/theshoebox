@@ -7,6 +7,7 @@ function renderStructure() {
     <div id="filter-bar"></div>
     <main id="product-grid"></main>
     <footer></footer>`;
+
     return {
         // freeShipping: container.querySelector("#free-shipping"),
         header: container.querySelector("header"),
