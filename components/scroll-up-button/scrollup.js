@@ -1,35 +1,31 @@
 "use strict"
-// Visa knappen när användaren har scrollat ner
+
 window.onscroll = function() {
     showScrollButton();
-  };
+};
 
-  function showScrollButton() {
-    var scrollToTopBtn = document.getElementById("scrollToTopBtn");
-    // Visa knappen när användaren har scrollat ner 300px från toppen
+function showScrollButton() {
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
     if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
       scrollToTopBtn.style.display = "block";
     } else {
       scrollToTopBtn.style.display = "none";
     }
-  }
+}
 
-  // Funktion för att skapa knappkomponenten
-  function createScrollToTopButton() {
+function createScrollToTopButton() {
     var button = document.createElement("button");
     button.id = "scrollToTopBtn";
-    button.innerHTML = "Scrolla till toppen";
+    button.innerHTML = "TOP";
     button.onclick = scrollToTop;
     document.body.appendChild(button);
-  }
+}
 
-  // Scrolla upp när knappen klickas
-  function scrollToTop() {
-    document.body.scrollTop = 0; // För äldre webbläsare
-    document.documentElement.scrollTop = 0; // För moderna webbläsare
-  }
+function scrollToTop() {
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0; 
+}
 
-  // Skapa knappkomponenten vid sidans laddning
-  window.onload = function() {
+window.onload = function() {
     createScrollToTopButton();
-  };
+};
